@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">App championship</string>
+    <string name="link_text">
+        Наслаждайся отборочными. \n
+        Будь внимателен. \n
+        Делай хорошо.
+    </string>
 </resources>

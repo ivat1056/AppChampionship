@@ -2,6 +2,7 @@ package com.example.appchampionship;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -20,6 +21,5 @@ public class MainLogin extends AppCompatActivity {
 
     public void btSignIn(View view) {
 
-
-    }
+        startActivity(new Intent(this, MainActivityPage.class));    }
 }

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnReg(View view) {
-        startActivity(new Intent(this, MainLogin.class));
+        startActivity(new Intent(this, MainActivityRegistration.class));
 
     }
 

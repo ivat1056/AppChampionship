@@ -8,16 +8,62 @@
     tools:context=".MainLogin">
 
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_png"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sign"
+        />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="200dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        />
+
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="304dp"
         android:layout_height="66dp"
         android:ems="10"
+        android:layout_marginTop="0dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonPr"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/sign"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="304dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Пароль"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -42,9 +88,9 @@
         android:text="Register"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="250dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginTop="20dp"
+
         app:layout_constraintBottom_toTopOf="@+id/buttonPr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,28 +101,16 @@
         android:layout_width="332dp"
         android:layout_height="64dp"
         android:layout_marginBottom="80dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/mybutton"
         android:onClick="BtnPr"
         android:text="Профиль"
+        android:layout_marginTop="20dp"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="304dp"
-        android:layout_height="66dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-
-         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

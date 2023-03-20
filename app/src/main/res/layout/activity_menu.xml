@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blackgrey"
-    tools:context=".MainActivityRegistration">
-
+    tools:context=".Menu">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="194dp"
         android:layout_height="76dp"
-        android:text="Тут будет регистрация"
+        android:text="Тут будет меню"
         android:textColor="@color/white"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Тут будет регистрация" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,10 +16,10 @@ public class MainLogin extends AppCompatActivity {
 
     public void BtnPr(View view) {
 
-
+        startActivity(new Intent(this, MainActivityProfile.class));
     }
 
     public void btSignIn(View view) {
 
-        startActivity(new Intent(this, MainActivityPage.class));    }
+        startActivity(new Intent(this, MainActivityMask.class));    }
 }

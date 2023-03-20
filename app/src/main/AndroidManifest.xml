@@ -15,6 +15,27 @@
         android:theme="@style/Theme.AppChampionship"
         tools:targetApi="31">
         <activity
+            android:name=".MainList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BlocMask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivityMask"
             android:exported="false">
             <meta-data
@@ -22,7 +43,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivityPage"
+            android:name=".MainActivityMask$MainActivityPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -54,12 +54,6 @@ public class MainActivityMask extends AppCompatActivity {
         rvFeeling.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
 
-
-        dataRVAdapter = new AdapterMaskFeeling(listFeeling, MainActivityMask.this);
-        rvFeeling.setAdapter(dataRVAdapter);
-        new GetFeeling().execute();
-
-
     }
 
     public void nextClick(View view) {
